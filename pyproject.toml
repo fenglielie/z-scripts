@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "z-scripts"
+version = "0.1.0"
+description = "A collection of command-line Python scripts"
+authors = [
+    {name = "fenglielie", email = "fenglielie@qq.com"}
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+auto-latexmk = "z_scripts.auto_latexmk:main"
+echo-path = "z_scripts.echo_path:main"
+git-check = "z_scripts.git_check:main"
+latex-check = "z_scripts.latex_check:main"
+rm2trash = "z_scripts.rm2trash:main"
